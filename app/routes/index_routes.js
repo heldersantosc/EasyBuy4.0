@@ -5,7 +5,7 @@ module.exports = function(application){
     });
 
     application.get('/login', function(req,res){
-        res.render('login');
+        res.render('login', {inputEmail : '', errors: ''});
     });
 
     application.get('/cadastro', function(req,res){

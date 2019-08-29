@@ -36,14 +36,18 @@
         <h3 class="mb-3">Acesse sua conta</h3>
         <a class="btn ml-0 p-0" href="../index.html"><h1 class="mb-3"> EasyBuy </h1></a>
 
-        <input id="inputEmail" name="inputEmail" type="email" class="form-control" placeholder="Email" required="" autofocus="">
+        <input id="inputEmail" name="inputEmail" type="email" class="form-control" placeholder="Email"  autofocus="" value="<%=inputEmail%>">
 
-        <input id="inputPassword" name="inputPassword" type="password" class="form-control" placeholder="Senha" required="">
+        <input id="inputPassword" name="inputPassword" type="password" class="form-control" placeholder="Senha">
       
-          <div class="alert alert-danger" role="alert">
-              <strong><p class="m-0 p-0"> Dados incorretos! </p></strong>
-              <strong><p class="m-0 p-0"> Verifique seu email e senha.</p></strong>
+        <%if(inputEmail == ''){ %>
+          <div class="alert alert-danger text-left" role="alert">
+            <ul class="m-1 p-1">
+              <li><strong><p class="m-0 p-0"> <%=errors[0].msg%> </p></strong></li>
+              <li><strong><p class="m-0 p-0"> <%=errors[1].msg%> </p></strong></li>
+            </ul>
           </div>
+        <%}%>
       
 
         <button class="btn btn-lg btn-primary btn-block mt-3" type="submit" value="submit" name="submit">

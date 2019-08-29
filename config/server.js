@@ -4,13 +4,10 @@ const express = require('express');
 const consign = require('consign');
 /* importando o módulo do body-parser */
 const bodyParser = require('body-parser');
-/* importando o módulo do express-validator */
-const { check, validationResult } = require('express-validator');
 /* importando o módulo do express-session */
 const expressSession = require('express-session');
-/* importando o módulo do express-favicon */
-const expressFavicon = require('express-favicon');
-    
+const {check, validationResult} = require('express-validator/check');
+
 /* Iniciando o objeto do express */
 const app = express();
 
@@ -20,8 +17,8 @@ app.set('views', './app/views');
 
 /* configurando o midleware express.static */
 app.use(express.static('./app/public'));
-/* configurando o midleware body-parser */
 app.use(bodyParser.urlencoded({extended: true}));
+
 /* configurando o express-session */
 app.use(expressSession({
     secret: ' ',
