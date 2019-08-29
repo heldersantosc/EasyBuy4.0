@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Aceitação de Caracteres -->
+    <meta charset="utf-8">
+    <!-- Tamanho da página / Dispositivos Mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/cadastrostyles.css">
+    <!-- Bootstrap JS --> 
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <!-- Icones personalizados --> 
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#cellphone').mask('(00) 00000-0000');
+        $('#phone').mask('(00) 0000-0000');
+        $('#zip').mask('00000-000');
+        $('#cc-expiration').mask('00/00');
+        $('#cc-cvv').mask('0000');
+      });
+    </script>
+    <!-- Icone EasyBuy no navegador -->
+    <link rel="shortcut icon" href="../logo_site/logo.png" >
+    <!-- Titulo da Página -->
+    <title>Cadastro de Clientes - EasyBuy</title>
+</head>
+
+  <body class="bg-intyellow">
+      <div class="container col-md-5">
+      <h1 class="mb-3 mt-3">Cadastro de Cliente</h1>
+
+      <form class="needs-validation" action="../controller/realizar_cadastro.php" method="POST">
+
+        <!-- Nome -->
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="*Primeiro nome" value="" required="">
+            <div class="invalid-feedback">
+              Informe um nome válido!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="*Último nome" value="" required="">
+            <div class="invalid-feedback">
+              Informe um último nome válido!
+            </div>
+          </div>
+        </div>
+
+        <!-- Telefone -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="cellphone" name="cellphone" placeholder="*N° Celular" value="" required="">
+            <div class="invalid-feedback">
+              Informe um número válido!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefone Fixo" value="" >
+            <div class="invalid-feedback">
+              Informe um número válido!
+            </div>
+          </div>
+        </div>
+
+        <!-- email -->
+        <div class="row">
+          <div class="col-md-8 mb-3 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="email" class="form-control" id="email" name="email" placeholder="email@examplo.com" required="">
+            <div class="invalid-feedback">
+              Informe um email válido!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="*Senha EasyBuy" value="" required="" >
+              <div class="invalid-feedback">
+                Informe uma senha válida!
+              </div>
+          </div>
+        </div>
+
+        <!-- Endereço -->
+        <legend>Endereço</legend>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="address" name="address" placeholder="*Rua" required="">
+            <div class="invalid-feedback">
+              Informe seu endereço!
+            </div>
+          </div>
+          <div class=" col-md-6 mb-3">
+            <input type="text" class="form-control" id="numberaddress" name="numberaddress" placeholder="*N°" required="">
+            <div class="invalid-feedback">
+              Informe o número da casa!
+            </div>
+          </div>
+        </div>
+
+        <!-- Pais  -->
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">País</label>
+            <select class="custom-select d-block w-100" id="country" name="country" required="">
+              <option value=""></option>
+              <option >Brasil</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecione um país!
+            </div>
+          </div>
+
+          <!-- Estado  -->
+          <div class="col-md-4 mb-3">
+            <label for="state">Estado</label>
+            <select class="custom-select d-block w-100" id="state" name="state" required="" placeholder="...">
+              <option></option>
+              <option>Amazonas(AM)</option>
+              <option>Acre (AC)</option>
+              <option>Alagoas (AL)</option>
+              <option>Amapá (AP)</option>
+              <option>Bahia (BA)</option>
+              <option>Ceará (CE)</option>
+              <option>Distrito Federal (DF)</option>
+              <option>Espírito Santo (ES)</option>
+              <option>Goiás (GO)</option>
+              <option>Maranhão (MA)</option>
+              <option>Mato Grosso (MT)</option>
+              <option>Mato Grosso do Sul (MS)</option>
+              <option>Minas Gerais (MG)</option>
+              <option>Pará (PA) </option>
+              <option>Paraíba (PB)</option>
+              <option>Paraná (PR)</option>
+              <option>Pernambuco (PE)</option>
+              <option>Piauí (PI)</option>
+              <option>Rio de Janeiro (RJ)</option>
+              <option>Rio Grande do Norte (RN)</option>
+              <option>Rio Grande do Sul (RS)</option>
+              <option>Rondônia (RO)</option>
+              <option>Roraima (RR)</option>
+              <option>Santa Catarina (SC)</option>
+              <option>São Paulo (SP)</option>
+              <option>Sergipe (SE)</option>
+              <option>Tocantins (TO)</option>
+            </select>
+            <div class="invalid-feedback">
+              Insira um Estado válido!
+            </div>
+          </div>
+
+          <!-- CEP  -->
+          <div class="col-md-3 mb-3">
+            <label for="zip">CEP</label>
+            <input type="text" class="form-control cep-mask" id="zip" name="zip" placeholder="*CEP" required="">
+            <div class="invalid-feedback">
+              CEP é obrigatório!
+            </div>
+          </div>
+        </div>
+
+        
+        <hr class="mb-4">
+
+        <!-- Formas de Pagamento  -->
+        <h4 class="mb-3">Formas de Pagamento</h4>
+        <!-- Cartões  -->
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" value="Cartão de Crédito" required="">
+            <label class="custom-control-label" for="credit">Cartão de Crédito</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" value="Cartão de Débito" required="">
+            <label class="custom-control-label" for="debit">Cartão de Débito</label>
+          </div>
+        </div>
+
+        
+        <div class="row">
+          <!-- Nome no cartão  -->
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Nome no cartão</label>
+            <input type="text" class="form-control" id="cc-name" name="cc-name" placeholder="" required="">
+            <small class="text-muted">Nome como está no cartão!</small>
+            <div class="invalid-feedback">
+              Informe o nome como está no cartão!
+            </div>
+          </div>
+          <!-- Numero do cartão  -->
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Número do Cartão</label>
+            <input type="text" class="form-control" id="cc-number" name="cc-number" placeholder="" required="">
+            <div class="invalid-feedback">
+              Informe o número do cartão!
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Data Expiração  -->
+          <div class="col-md-5 mb-3">
+            <label for="cc-expiration">Data de Expiração</label>
+            <input type="text" class="form-control" id="cc-expiration" name="cc-expiration" placeholder="" required="">
+            <div class="invalid-feedback">
+              Informe a data de expiração!
+            </div>
+          </div>
+          <!-- Código de Segurança  -->
+          <div class="col-md-5 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" name="cc-cvv" placeholder="" required="">
+            <div class="invalid-feedback">
+              Informe o código de segurança!
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Cadastro</button>
+      </form>
+        
+      <?php
+         if(isset($_SESSION['nao_autenticado'])):
+      ?>
+        <div class="alert alert-danger" role="alert">
+            <strong><p class="m-0 p-0"> Usuário já cadastrado! </p></strong>
+        </div>
+        <div class="jumbotron jumbotron-fluid bg-danger">
+        <div class="container">
+          <h1 class="display-4">Usuário já existente!</h1>
+          <p class="lead">O email que você informou já está cadastrado como nosso cliente.</p>
+        </div>
+      </div>
+      <?php
+         endif;
+      ?>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2019 EasyBuy</p>
+      </footer>
+  </div>
+  
+  <script src="../js/form-validation.js.download"></script>
+</body>
+</html>

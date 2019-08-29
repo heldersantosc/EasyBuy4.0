@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Aceitação de Caracteres -->
+    <meta charset="utf-8">
+    <!-- Tamanho da página / Dispositivos Mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Compatibilidade com IE-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Icone EasyBuy no navegador -->
+    <link rel="shortcut icon" type="image/x-icon" href="3980logo.ico">
+   
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- Bootstrap personalizado -->
+    <link rel="stylesheet" type="text/css" href="../css/signinstyles.css">
+
+    <!-- Fonte EasyBuy -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  
+    <!-- Icones personalizados --> 
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!-- Titulo da Página -->
+    <title> Área do Usuário! </title>
+
+    
+    </style>
+  </head>
+  <body class="text-center bg-intyellow">
+
+    <form class="form-signin" action="/validar_usuario" method="POST">
+        
+        <h3 class="mb-3">Acesse sua conta</h3>
+        <a class="btn ml-0 p-0" href="../index.html"><h1 class="mb-3"> EasyBuy </h1></a>
+
+        <input id="inputEmail" name="inputEmail" type="email" class="form-control" placeholder="Email" required="" autofocus="">
+
+        <input id="inputPassword" name="inputPassword" type="password" class="form-control" placeholder="Senha" required="">
+      
+          <div class="alert alert-danger" role="alert">
+              <strong><p class="m-0 p-0"> Dados incorretos! </p></strong>
+              <strong><p class="m-0 p-0"> Verifique seu email e senha.</p></strong>
+          </div>
+      
+
+        <button class="btn btn-lg btn-primary btn-block mt-3" type="submit" value="submit" name="submit">
+          <ion-icon name="log-in"></ion-icon> Entrar</button>
+        <p class="mt-5 mb-3 text-muted">©2019</p>
+    </form>
+
+  </body>
+</html>

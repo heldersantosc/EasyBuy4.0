@@ -1,0 +1,82 @@
+.bg-aqua {
+    background-color: #7fdbff;
+}
+.bg-navyellow {
+  background-color: #f4c242;
+}
+.bg-marrom {
+	background-color: #700000;
+}
+.bg-salmao {
+    background-color: #f4c741;
+}
+
+
+
+.mb-6, .my-6 {
+    margin-top: 4rem;
+}
+.mt-6, .my-6 {
+    margin-top: 4rem;
+}
+.mt-7, .my-7 {
+    margin-top: 5rem;
+}
+.mt-8, .my-8 {
+    margin-top: 6rem;
+}
+
+.largura-fixa-botao{
+	width: 15rem;
+}
+
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 0px;
+ }
+
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+ }
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 220px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+}
+
+.borda{
+	border-color: black;
+	border-style: solid;
+}
+
+.img_produto{
+    background-color: black;
+}

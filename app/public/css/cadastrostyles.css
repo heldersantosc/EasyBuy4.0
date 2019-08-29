@@ -1,0 +1,25 @@
+.bg-intyellow {
+    background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/pagina_inicial_cadastro.jpg);
+}
+
+h1{
+  font-weight: 1000;
+  font-size: 2em;
+}
+
+label{
+	font-weight:bold;
+}
+
+.borda{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e67e22;;
+	border-radius: 20px;
+	padding:10px;
+}
+
+legend{
+	font-size: 18px;
+	font-weight: bold;
+}

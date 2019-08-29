@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Aceitação de Caracteres -->
+	<meta charset="utf-8">
+	<!-- Tamanho da página / Dispositivos Mobiles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Compatibilidade com IE-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Icone EasyBuy no navegador -->
+	<link rel="shortcut icon" href="../logo_site/logo.png" >
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/navstyle.css" >
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+	<!-- Icones personalizados --> 
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+	<title>EasyBuy</title>
+</head>
+
+<body>
+
+	<!-- barra de navegação -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-marrom reduce_padding">
+				
+		<!-- gera um botão de menu quando o navegador fica pequeno -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+		
+		<!-- Lista as opções do menu -->
+		<div class="collapse navbar-collapse ml-3" id="navbarNav">
+			<ul class="navbar-nav">
+				<!-- Menu Departamento -->
+				<div class="dropdown">
+				  <a class="btn btn-light btn-sm m-1 largura-fixa-botao dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <ion-icon name="grid"></ion-icon> Departamentos </a> 
+				<!-- Lista as opções do Departamento -->
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					  <a class="dropdown-item" href="#">Padaria</a>
+					  <a class="dropdown-item" href="#">Frutas e Legumes</a>
+					  <a class="dropdown-item" href="#">Carnes, Aves e Peixes</a>
+					  <a class="dropdown-item" href="#">Frios e Laticínios</a>
+					  <a class="dropdown-item" href="#">Biscoitos e Salgados</a>
+					  <a class="dropdown-item" href="#">Doces e Sobremesas</a>
+					  <a class="dropdown-item" href="#">Farinhas e Grãos</a>
+					  <a class="dropdown-item" href="#">Temperos</a>
+					  <a class="dropdown-item" href="#">Bebidas</a>
+					  <a class="dropdown-item" href="#">Bebidas Alcoólcas</a>
+					  <a class="dropdown-item" href="#">Limpeza</a>
+					  <a class="dropdown-item" href="#">Higiene Pessoal</a>
+					  <a class="dropdown-item" href="#">Pet Shop</a>
+				  </div>
+				</div>
+
+				<!-- Menu itens -->
+				<li class="nav-item">
+					  <a class="btn btn-light largura-fixa-botao btn-sm m-1" href="#"> <ion-icon name="megaphone"></ion-icon> Novidades </a>
+				</li>
+				<li class="nav-item">
+				  <a class="btn btn-light largura-fixa-botao btn-sm m-1" href="#"> <ion-icon name="list-box"></ion-icon> Minha Prateleira</a>
+				</li>
+				<li class="nav-item">
+				  <a class="btn btn-light largura-fixa-botao btn-sm m-1" href="#"> <ion-icon name="cart"></ion-icon>  Lista de Compras</a>
+				</li>
+
+				<div class="nav-item">
+					<div class="btn largura-fixa-botao m-1 borda"> 
+
+
+					</div>
+				</div>
+
+			</ul> <!-- Fim da lista de menus -->
+		</div>
+
+	</nav>   <!-- termina a barra de navegação --->
+
+	<nav class="navbar navbar-light bg-salmao mt-5 pr-0">
+	  <!-- logo do site -->
+		<a navbar-brand href="#" class="">
+			<img class="ml-3" src="../logo_site/logo_dark_text.png" width="150" alt="...">
+		</a>
+		<hr class="mb-4">
+
+ 
+		<div class="container">
+			<div class="row w-100">
+				<!-- botao pesquisar -->
+				<div class="d-flex col-sm-4 p-2">
+					<div class="searchbar">
+						<input class="search_input" type="text" name="" placeholder="Pesquisar...">
+						<a href="#" class="search_icon"><i class=""><h3><ion-icon name="search" class="mt-3"></h3></ion-icon></i></a>
+			        </div>
+			    </div>
+
+
+			    <div class="d-flex col-sm-4 p-2">
+			    	<button class="btn btn-button"><ion-icon name="arrow-dropdown"></ion-icon><span> Rua, Itauna, 101 - Novo Aleixo</span></button>
+			    </div>
+			    
+
+			    <div class="d-flex col-sm-2 p-2">
+					<!-- Split dropright button -->
+					<div class="btn-group dropright">
+						<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span>
+								Olá, <?php echo $_SESSION['inputEmail']; ?>
+							</span>
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#" ><ion-icon name="person"></ion-icon> Alterar dados </a>
+							<a class="dropdown-item" href="../controller/logout.php" ><ion-icon name="log-out"></ion-icon> Sair </a>
+						</div>
+					</div>
+				</div>
+	  		</div>
+		</div>
+	</nav>
+	
+	<!-- Lista a busca aqui -->
+	<div id="lista_produtos" class="container mt-3">	
+
+		<?php
+			include 'modelo_de_busca.php';
+		?>
+
+
+	</div>
+
+
+</body>
+
+</html>
